@@ -1,0 +1,48 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { line-height: 1.6; color: #333; }
+
+/* Navigation */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #004c99; color: white; position: sticky; top: 0; z-index: 1000; }
+.logo { font-size: 1.5rem; font-weight: bold; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: white; font-weight: 500; transition: 0.3s; }
+.nav-links a:hover { color: #ffcc00; }
+
+/* Hero Section */
+.hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?technology,code'); background-size: cover; height: 80vh; color: white; display: flex; justify-content: center; align-items: center; text-align: center; }
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.highlight { color: #ffcc00; }
+.social-links { margin: 20px 0; }
+.social-links a { color: white; text-decoration: none; margin: 0 10px; font-size: 1.2rem; border: 1px solid white; padding: 10px 20px; border-radius: 5px; transition: 0.3s; }
+.social-links a:hover { background: white; color: #333; }
+.btn { background: #004c99; color: white; padding: 10px 25px; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; font-size: 1rem; }
+.btn:hover { background: #003366; }
+
+/* Sections */
+.container { padding: 60px 20px; text-align: center; }
+.bg-light { background: #f4f4f4; }
+h2 { font-size: 2rem; margin-bottom: 30px; color: #004c99; }
+
+/* Skills Grid */
+.skills-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.skill-card { background: white; padding: 20px; width: 150px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.skill-card i { font-size: 2.5rem; color: #004c99; margin-bottom: 10px; }
+
+/* Projects Grid */
+.project-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.project-card { background: white; border: 1px solid #ddd; padding: 25px; width: 300px; border-radius: 10px; text-align: left; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.project-card h3 { color: #333; margin-bottom: 10px; }
+.tech { color: #666; font-size: 0.9rem; font-style: italic; margin-bottom: 15px; }
+.btn-sm { display: inline-block; text-decoration: none; color: #004c99; font-weight: bold; margin-top: 10px; }
+
+/* Contact Form */
+form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .nav-links { display: none; } /* Simplified for mobile */
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Patil | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Ajay Patil</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Ajay Patil</span></h1>
+            <p>Computer Engineer | Java & Python Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a 2022 Computer Engineering graduate from SPPU, Pune. I specialize in building efficient software using <strong>Java, SQL, and Python</strong>. I am passionate about solving algorithmic problems and eager to start my career in the IT industry.</p>
+    </section>
+
+    <section id="skills" class="container bg-light">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-java"></i> <h3>Java</h3></div>
+            <div class="skill-card"><i class="fab fa-python"></i> <h3>Python</h3></div>
+            <div class="skill-card"><i class="fas fa-database"></i> <h3>SQL / MySQL</h3></div>
+            <div class="skill-card"><i class="fab fa-html5"></i> <h3>Web Dev</h3></div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <h3>Employee Management System</h3>
+                <p class="tech">Java | JDBC | MySQL</p>
+                <p>A desktop app to manage employee records and payroll using CRUD operations.</p>
+                <a href="https://github.com/yourusername/Employee-Management-System" class="btn-sm" target="_blank">View Code</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Library Portal</h3>
+                <p class="tech">Python | Tkinter | SQLite</p>
+                <p>Automated library script that calculates fines for late returns.</p>
+                <a href="https://github.com/yourusername/Student-Library-Portal" class="btn-sm" target="_blank">View Code</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="container bg-light">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ajay Patil. Built with HTML, CSS & JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
